@@ -10,6 +10,10 @@ Some sample test cases can be found in
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_TranslatorFiles -> partCtest1, partCtest2, etc._
 
+Sample output can be found in 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_TranslatorFiles -> test1results_
+
 &nbsp;
 
 ## THE SCANNER (does Lexical Analysis)
