@@ -15,10 +15,7 @@ Some sample test cases can be found in
 
 1.  Get the next string up to a blank or end of line
 2.  Call the two token functions (word DFA & period DFA) one after another (if-then-else)
-
-  *And generate a lexical error if both DFAs failed and
-  *let the token_type be ERROR in that case.
-
+  1. Generate a lexical error if both DFAs failed and let the token_type be ERROR in that case.
 3.
 4.
 5.
