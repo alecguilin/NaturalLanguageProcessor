@@ -9,8 +9,16 @@ Some sample test cases can be found in
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_TranslatorFiles -> partCtest1, partCtest2, etc._
 
-##### THE SCANNER (does Lexical Analysis)
+&nbsp;
+
+###### THE SCANNER (does Lexical Analysis)
+
+Scanner
 
 ###### THE PARSER (does Syntactic Analysis)
 
+Parser
+
 ###### THE TRANSLATOR (does Semantic Analysis)
+
+Translator
