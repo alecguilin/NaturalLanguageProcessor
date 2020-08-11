@@ -11,14 +11,14 @@ Some sample test cases can be found in
 
 &nbsp;
 
-###### THE SCANNER (does Lexical Analysis)
+## THE SCANNER (does Lexical Analysis)
 
 Scanner
 
-###### THE PARSER (does Syntactic Analysis)
+## THE PARSER (does Syntactic Analysis)
 
 Parser
 
-###### THE TRANSLATOR (does Semantic Analysis)
+## THE TRANSLATOR (does Semantic Analysis)
 
 Translator
