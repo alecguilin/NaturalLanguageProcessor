@@ -4,6 +4,8 @@
 
 using namespace std;
 
+ifstream fin;		 // a global stream to read from input files
+
 
 #define NUM_WORDS 18 // the number of reserved words
 
@@ -13,7 +15,6 @@ enum tokentype { WORD1, WORD2, PERIOD, ERROR, VERB, VERBNEG, VERBPAST, VERBPASTN
 // For the display names of tokens - must be in the same order as the tokentype.
 string tokenName[30] = { "WORD1", "WORD2", "PERIOD", "ERROR", "VERB", "VERBNEG", "VERBPAST", "VERBPASTNEG", "IS", "WAS", "OBJECT", "SUBJECT", "DESTINATION", "PRONOUN", "CONNECTOR" };
 
-// TABLES
 // the table to hold a list of reserved words
 struct reservedWords {
 	const char* theString;
@@ -133,7 +134,7 @@ bool word(string s)
 			//stuck = true;
 			break;
 		} // end of switch
-		if (stuck==false)
+		if (stuck == false)
 			charpos++;
 		else
 			break;
@@ -142,7 +143,7 @@ bool word(string s)
    // if in a final state return true, else return false
 	if (state == 2 || state == 3)
 		return true;
-	else 
+	else
 		return false;
 } // end of function
 
@@ -161,9 +162,6 @@ bool period(string s)
 
 // SCANNER processes only one word each time it is called
 // Gives back the token type and the word itself
-
-ifstream fin;		 // a global stream to read from input files
-
 int scanner(tokentype& tt, string& w)
 {
 	// Grab the next word from the file via fin
@@ -201,4 +199,5 @@ int scanner(tokentype& tt, string& w)
 		tt = ERROR;
 		cout << "Lexical error: " << w << " is not a valid token" << endl;
 	}
+
 }//the end of scanner
